@@ -4,19 +4,22 @@ import style from './ProfileCity.module.css';
 
 const ProfileCity = ({ users }) => {
   return (
-    <ul className={style.cards}>
-      {users.map(user => (
-        <li className={style.card} key={user.tag}>
-          <Profile
-            username={user.username}
-            tag={user.tag}
-            location={user.location}
-            avatar={user.avatar}
-            stats={user.stats}
-          />
-        </li>
-      ))}
-    </ul>
+    <div className={style.conteiner}>
+      {' '}
+      <ul className={style.cards}>
+        {users.map(user => (
+          <li className={style.card} key={user.tag}>
+            <Profile
+              username={user.username}
+              tag={user.tag}
+              location={user.location}
+              avatar={user.avatar}
+              stats={user.stats}
+            />
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
