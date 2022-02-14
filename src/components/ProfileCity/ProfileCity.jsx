@@ -1,11 +1,12 @@
-import Profile from './Profile';
+import Profile from '../Profile/Profile';
 import PropTypes from 'prop-types';
+import style from './ProfileCity.module.css';
 
 const ProfileCity = ({ users }) => {
   return (
-    <ul>
+    <ul className={style.cards}>
       {users.map(user => (
-        <li key={user.tag}>
+        <li className={style.card} key={user.tag}>
           <Profile
             username={user.username}
             tag={user.tag}

@@ -1,0 +1,9 @@
+.cards {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.card {
+  margin-left: 20px;
+  background-color: rgb(255, 250, 235);
+}
