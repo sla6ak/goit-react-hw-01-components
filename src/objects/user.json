@@ -1,0 +1,24 @@
+[
+  {
+    "username": "Jacques Gluke",
+    "tag": "jgluke",
+    "location": "Ocho Rios, Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 5603,
+      "views": 4827,
+      "likes": 1308
+    }
+  },
+  {
+    "username": "Володя Зеленский",
+    "tag": "призедент",
+    "location": "Кривой Рог, Украина",
+    "avatar": "https://icdn.lenta.ru/images/2021/01/26/16/20210126161304300/square_320_47506c8c295f1fe99653f38d8c08e66c.jpg",
+    "stats": {
+      "followers": 6545633,
+      "views": 43554474,
+      "likes": 40353376
+    }
+  }
+]
