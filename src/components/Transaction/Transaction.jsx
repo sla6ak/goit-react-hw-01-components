@@ -1,7 +1,7 @@
 import styles from './Transaction.module.css';
+import propTypes from 'prop-types';
 
 const Transaction = ({ currency, amount, type, isGrey }) => {
-  console.log(isGrey);
   return (
     <tr
       className={styles.transactionTr}
@@ -12,6 +12,12 @@ const Transaction = ({ currency, amount, type, isGrey }) => {
       <th className={styles.transactionTh}>{currency}</th>
     </tr>
   );
+};
+Transaction.protoTypes = {
+  amount: propTypes.number,
+  isGrey: propTypes.bool,
+  currency: propTypes.string,
+  type: propTypes.string,
 };
 
 export default Transaction;

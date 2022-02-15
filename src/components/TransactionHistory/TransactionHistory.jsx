@@ -1,5 +1,6 @@
 import styles from './TransactionHistory.module.css';
 import Transaction from 'components/Transaction/Transaction';
+import propTypes from 'prop-types';
 
 const TransactionHistory = ({ transactions }) => {
   return (
@@ -19,6 +20,7 @@ const TransactionHistory = ({ transactions }) => {
           }
           return (
             <Transaction
+              key={transaction.id}
               isGrey={variable}
               currency={transaction.currency}
               type={transaction.type}
@@ -31,4 +33,7 @@ const TransactionHistory = ({ transactions }) => {
   );
 };
 
+TransactionHistory.propTypes = {
+  transactions: propTypes.array,
+};
 export default TransactionHistory;
