@@ -4,7 +4,7 @@ const Frend = ({ avatar, name, isOnline }) => {
     <div className={style.item}>
       <span
         className={style.isOnline}
-        style={{ backgroundColor: '#8c8' }}
+        style={{ backgroundColor: isOnline ? '#6a6' : '#f77' }}
       ></span>
       <img className="avatar" src={avatar} alt="User avatar" width="48" />
       <p className="name">{name}</p>

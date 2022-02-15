@@ -5,6 +5,8 @@ import StatisticList from './Statistics/StatisticList';
 import statisticaBack from '../objects/statisticaBack.json';
 import FrendList from './FrendList/FrendList';
 import frends from '../objects/frends.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from '../objects/transaction-history.json';
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
       <ProfileCity className={style.work} users={mans} />
       <StatisticList className={style.work} statisticaBack={statisticaBack} />
       <FrendList className={style.work} frends={frends} />
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };

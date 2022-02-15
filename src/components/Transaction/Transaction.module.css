@@ -1,0 +1,16 @@
+.transactionTr {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+}
+
+.transactionTh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.transactionTh:not(:last-child) {
+  border-right: 2px solid #fff;
+}
