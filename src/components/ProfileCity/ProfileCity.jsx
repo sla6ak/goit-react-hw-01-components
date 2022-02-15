@@ -5,7 +5,6 @@ import style from './ProfileCity.module.css';
 const ProfileCity = ({ users }) => {
   return (
     <div className={style.conteiner}>
-      {' '}
       <ul className={style.cards}>
         {users.map(user => (
           <li className={style.card} key={user.tag}>
