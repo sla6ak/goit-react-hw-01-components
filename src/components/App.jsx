@@ -12,7 +12,11 @@ const App = () => {
   return (
     <div>
       <ProfileCity className={style.work} users={mans} />
-      <StatisticList className={style.work} statisticaBack={statisticaBack} />
+      <StatisticList
+        className={style.work}
+        title="Upload stats"
+        statisticaBack={statisticaBack}
+      />
       <FrendList className={style.work} frends={frends} />
       <TransactionHistory transactions={transactions} />
     </div>
